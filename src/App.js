@@ -6,8 +6,24 @@ const flagDictionary = {
   "🇧🇪": "Belgium",
   "🇨🇦": "Canada",
   "🇩🇪": "Germany",
+  "🇭🇺": "Hungary",
+  "🇮🇳": "India",
+  "🇯🇵": "Japan",
+  "🇰🇷": "South Korea",
+  "🇱🇾": "Libya",
+  "🇲🇻": "Maldives",
+  "🇳🇵": "Nepal",
+  "🇴🇲": "Oman",
+  "🇵🇰": "Pakistan",
+  "🇶🇦": "Qatar",
+  "🇷🇺": "Russia",
   "🇪🇸": "Spain",
-  "🇮🇳": "India"
+  "🇸🇬": "Singapore",
+  "🇹🇷": "Turkey",
+  "🇺🇾": "Uruguay",
+  "🇻🇳": "Vietnam",
+  "🇾🇪": "Yemen",
+  "🇿🇼": "Zimbabwe"
 };
 
 var flagArray = Object.keys(flagDictionary);
