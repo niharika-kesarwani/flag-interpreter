@@ -35,7 +35,7 @@ export default function App() {
     var userInput = event.target.value;
     var answer = flagDictionary[userInput];
 
-    if (answer === undefined) answer = "This flag is not in our database";
+    if (answer === undefined) answer = "This flag is not in our database 😔";
 
     setFlag(answer);
   }
