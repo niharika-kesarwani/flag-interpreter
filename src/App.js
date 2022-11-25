@@ -36,7 +36,7 @@ export default function App() {
     var answer = flagDictionary[userInput];
 
     if (answer === undefined && userInput !== "") {
-      answer = "This flag is not in our database 😔";
+      setFlag("This flag is not in our database 😔");
     } else {
       setFlag(answer);
     }
