@@ -35,9 +35,11 @@ export default function App() {
     var userInput = event.target.value;
     var answer = flagDictionary[userInput];
 
-    if (answer === undefined) answer = "This flag is not in our database 😔";
-
-    setFlag(answer);
+    if (answer === undefined && userInput !== "") {
+      answer = "This flag is not in our database 😔";
+    } else {
+      setFlag(answer);
+    }
   }
 
   function listClickHandler(item) {
