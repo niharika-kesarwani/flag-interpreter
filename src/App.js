@@ -50,7 +50,6 @@ export default function App() {
   return (
     <div className="App">
       <h1 style={{ padding: "1rem" }}>Flag Interpreter</h1>
-
       <input
         onChange={listInputHandler}
         placeholder={"Enter any flag here to know the meaning"}
@@ -59,9 +58,8 @@ export default function App() {
           minWidth: "80%"
         }}
       />
-
       <h3 style={{ paddingTop: "1rem" }}>{flag}</h3>
-      <h3 style={{ padding: "1rem" }}>The flags which we know</h3>
+      <h2 style={{ padding: "1rem" }}>The flags which we know</h2>
       {flagArray.map((item) => {
         return (
           <span
@@ -78,6 +76,55 @@ export default function App() {
           </span>
         );
       })}
+      <footer className="footer">
+        <div className="footer-header">connect with me</div>
+        <ul className="footer-ul-links">
+          <li className="lists-item-inline">
+            <a
+              className="footer-links"
+              href="https://linkedin.com/in/niharika-kesarwani"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i className="fa-brands fa-linkedin"></i>
+              LinkedIn
+            </a>
+          </li>
+          <li className="lists-item-inline">
+            <a
+              className="footer-links"
+              href="https://github.com/NiharikaNeha"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i className="fa-brands fa-github"></i>
+              GitHub
+            </a>
+          </li>
+          <li className="lists-item-inline">
+            <a
+              className="footer-links"
+              href="https://twitter.com/Niharika_twt"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i className="fa-brands fa-twitter"></i>
+              Twitter
+            </a>
+          </li>
+          <li className="lists-item-inline">
+            <a
+              className="footer-links"
+              href="https://niharikakesarwani.netlify.app/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i className="social-icon fa-brands fa-dribbble"> </i>
+              Website
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
   );
 }
