@@ -1,6 +1,12 @@
 import "./styles.css";
 import React, { useState } from "react";
 
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+library.add(fab);
+
 const flagDictionary = {
   "🇦🇫": "Afghanistan",
   "🇧🇪": "Belgium",
@@ -86,7 +92,7 @@ export default function App() {
               rel="noreferrer"
               target="_blank"
             >
-              <i className="fa-brands fa-linkedin"></i>
+              <FontAwesomeIcon className="icons" icon={["fab", "linkedin"]} />
               LinkedIn
             </a>
           </li>
@@ -97,7 +103,7 @@ export default function App() {
               rel="noreferrer"
               target="_blank"
             >
-              <i className="fa-brands fa-github"></i>
+              <FontAwesomeIcon className="icons" icon={["fab", "github"]} />
               GitHub
             </a>
           </li>
@@ -108,7 +114,7 @@ export default function App() {
               rel="noreferrer"
               target="_blank"
             >
-              <i className="fa-brands fa-twitter"></i>
+              <FontAwesomeIcon className="icons" icon={["fab", "twitter"]} />
               Twitter
             </a>
           </li>
@@ -119,7 +125,7 @@ export default function App() {
               rel="noreferrer"
               target="_blank"
             >
-              <i className="social-icon fa-brands fa-dribbble"> </i>
+              <FontAwesomeIcon className="icons" icon={["fab", "dribbble"]} />
               Website
             </a>
           </li>
